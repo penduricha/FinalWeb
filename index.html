@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semester Final</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/file.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="col-md-12">
+      <header>
+        <img src="image/banner.png" alt="banner">
+      </header>
+    </div>
+    <div class="col-md-12">
+      <nav>
+          <ul class="navbar-nav nav" style="display: flex">
+            <li><a href="#" id="lg">Login</a></li>
+            <li><a href="#" id="myBtn">Open new tour</a></li>
+          </ul>
+      </nav>
+    </div>
+    <div class="col-md-12">
+      <section class="table-responsive">
+        <div>
+          <h4 style="text-align: center">LIST TOUR - TRAVEL VIET</h4>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Code</th>
+              <th>Travel name</th>
+              <th>Date depart</th>
+              <th>Price</th>
+              <th>Image</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <div class="col-md-12">
+      <footer style="text-align: center">
+        21107601- Tu Quang Nhat
+      </footer>
+    </div>
+  </div>
+  <!-- Modal-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 style="text-align: center; margin-left: 200px">TOUR</h2>
+        </div>
+        <div class="modal-body">
+          <form role="form" class="form-horizontal">
+            <div class="form-group">
+              <div id="notify" class="text-danger" style="text-align: center;"></div>
+            </div>
+            <div class="form-group">
+              <label for="txtCode" class="control-label col-xs-3">Code tour</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" id="txtCode" placeholder="Enter XXX-XXX-nm-yyyy">
+                <span id="errorCode" class="text-danger">*</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="txtTravelName" class="control-label col-xs-3">Travel name</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" id="txtTravelName" placeholder="Enter travel name">
+                <span id="errorTravelName" class="text-danger">*</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="txtDateDepart" class="control-label col-xs-3">Date depart</label>
+              <div class="col-md-9">
+                <input type="date" class="form-control" id="txtDateDepart" placeholder="Enter travel name">
+                <span id="errorDateDepart" class="text-danger">*</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="txtPrice" class="control-label col-xs-3">Price</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" id="txtPrice" placeholder="Number > 0">
+                <span id="errorPrice" class="text-danger">*</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="txtImage" class="control-label col-xs-3">Image</label>
+              <div class="col-md-9">
+                <input type="file" class="form-control" id="txtImage" accept=".jpg,.jpeg,.png">
+                <span id="errorImage" class="text-danger">*</span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <button type="button"
+                id="btnAdd"
+                class="btn btn-success"
+                style="margin-bottom: 20px; margin-left: 20px; margin-right: 20px"
+        >Add</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
